@@ -1,4 +1,3 @@
-# analytij
 
 #:TODO
 * Get REPL code working
@@ -10,6 +9,7 @@
 * create feature parity list 
 * add example csv
 
+# analytij
 
 Clojure library to ease interacting with the Google Analytics API. It is built upon [Google's Analytics API Java Client Library](https://developers.google.com/api-client-library/java/apis/analytics/v3).
 
