@@ -26,6 +26,7 @@ A [cost data file] (https://developers.google.com/analytics/solutions/data-impor
 ## Usage
 
 REPL
+:TODO run this in repl and get actual output
 
 ```clojure
  ;; example account id : 8 numbers
