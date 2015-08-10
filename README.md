@@ -1,5 +1,16 @@
 # analytij
 
+#:TODO
+* Get REPL code working
+    * make it work line by line
+    * make it work in the easiest way possible
+* Get OAuth2 token Grant working
+* Explain OAuth and what it does 
+* Explain 400 codes
+* create feature parity list 
+* add example csv
+
+
 Clojure library to ease interacting with the Google Analytics API. It is built upon [Google's Analytics API Java Client Library](https://developers.google.com/api-client-library/java/apis/analytics/v3).
 
 Current [version](http://mvnrepository.com/artifact/com.google.apis/google-api-services-analytics/v3-rev116-1.20.0)
@@ -55,7 +66,15 @@ REPL
 => Returns upload status. :TODO get results from REPL.
 
 ```
+#Debugging
 
+:TODO Explain Below. (Oauth problem)
+```
+TokenResponseException 400 Bad Request
+{
+  "error" : "invalid_grant"
+}  com.google.api.client.auth.oauth2.TokenResponseException.from (TokenResponseException.java:105)
+```
 
 
 #Terminology
@@ -82,7 +101,8 @@ Instructions copied/inspired from [legato](https://github.com/tpitale/legato/wik
 * Click **Create an OAuth**
     * Select Service Account
     * Click create client id
-* Private key should be automatically downloaded, keep it somewhere safe
+* JSON Private key should be automatically downloaded, keep it somewhere safe
+* Click on generate new p12 key to get .p12, keep it somewhere safe[Not sure if you need to]
 * Note the @developer.gserviceaccount.com email address that is displayed under the **Service account** section of the page.
 * Go to Google Analytics
 * Click Admin
